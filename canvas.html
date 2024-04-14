@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas Example</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000;">
+        Your browser does not support the canvas element.
+    </canvas>
+
+    <script>
+        // Get the canvas element and its context
+        var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext('2d');
+
+        // Draw a red rectangle
+        ctx.fillStyle = 'red';
+        ctx.fillRect(10, 10, 50, 50);
+    </script>
+</body>
+</html>
